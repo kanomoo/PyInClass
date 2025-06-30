@@ -1,3 +1,4 @@
+# แบบเปิด def งานนี้ไม่ค่อยจำเป็นที่ต้องเปิด def
 def hot_coffee():
     hot_data = []
     glasses = int(input("Hot Coffee, how many glasses : "))
@@ -71,3 +72,5 @@ def report():
 
 if __name__ == "__main__":
     report()
+
+# แบบไม่เปิด def
