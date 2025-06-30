@@ -23,3 +23,12 @@ for i in range(len(name)):
         mess += n
     mess += "\n"
 print(mess)
+
+name = input("name : ")
+mess = "\n"
+for i in range(len(name)):
+    mess += " " * i
+    for n in name[:len(name) - i]:
+        mess += f"{n} "
+    mess += "\n"
+print(mess)
