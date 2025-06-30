@@ -76,4 +76,4 @@ if __name__ == "__main__":
 # แบบไม่เปิด def
 print("test")
 print("Test3")
-print("Test5")
+print("Test6")
