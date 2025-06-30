@@ -66,6 +66,8 @@ def report():
                 data = frappe_coffee()
             case "4":
                 caculate(data,order)
+            case _:
+                print("No select")
 
 if __name__ == "__main__":
     report()
