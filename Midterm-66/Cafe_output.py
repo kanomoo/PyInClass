@@ -74,3 +74,4 @@ if __name__ == "__main__":
     report()
 
 # แบบไม่เปิด def
+print("test")
