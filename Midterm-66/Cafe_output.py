@@ -75,4 +75,4 @@ if __name__ == "__main__":
 
 # แบบไม่เปิด def
 print("test")
-print("Test2")
+print("Test3")
