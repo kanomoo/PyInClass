@@ -45,7 +45,7 @@ while True:
 # รอบ 2
 
 
-v
+
 # แบบเปิด def งานนี้ไม่ค่อยจำเป็นที่ต้องเปิด def
 # def hot_coffee():
 #     hot_data = []
