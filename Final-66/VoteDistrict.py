@@ -3,8 +3,10 @@ from random import randint
 
 def InputNumber_ppl():
     num = int(input("Input Number of vote (1000 - 5000) : "))
-    if num <= 1000: num = 1000
-    else: num = 5000
+    if num <= 1000:
+        num = 1000
+    else:
+        num = 5000
     return num
 
 def Random_Vote(num):
@@ -51,25 +53,25 @@ def main():
         print("=================================")
         print(" 1. Input Number Vote ( 1000 - 5000 )\n 2. Start Random . . .\n 3. Display\n 4. Exit Program")
         print("=================================")
-        choice = int(input("Select your choice : ( 1 - 4 ) : "))
+        choice = input("Select your choice : ( 1 - 4 ) : ")
         match choice:
-            case 1:
+            case "1":
                 num = InputNumber_ppl()
-            case 2:
+            case "2":
                 try:
                     datas = Random_Vote(num)
                 except UnboundLocalError:
                     print("Please Input Number Vote")
-            case 3:
+            case "3":
                 try:
                     Display(datas)
                 except UnboundLocalError:
                     print("Please Start Random")
-            case 4:
+            case "4":
                 print("Exit Program")
                 exit()
             case _:
-                print("No choice")
+                input("Please select your choice . . .")
         print()
 if __name__ == "__main__":
     main()
