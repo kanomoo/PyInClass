@@ -1,34 +1,79 @@
+import os
 from random import randint
 
-def inputNumber_ppl():
+def InputNumber_ppl():
     num = int(input("Input Number of vote (1000 - 5000) : "))
     if num <= 1000: num = 1000
-    elif num <= 5000: num = 5000
+    else: num = 5000
     return num
 
 def Random_Vote(num):
-    votes = []
+    print("Start Random . . .")
+    datas = []
     for i in range(7):
-        vote1 = []
+        data = []
         for n in range(num):
             vote = randint(0,3)
-            vote1.append(vote)
-        votes.append(vote1)
-    return votes
+            data.append(vote)
+        datas.append(data)
+    input("Press any key to continue . . .")
+    return datas
 
-def Display(votes):
-    print(votes)
-    for i in votes:
-        no_vote = i.count(0)
-        v1 = i.count(1)
-        v2 = i.count(2)
-        v3 = i.count(3)
-        print(no_vote,v1,v2,v3,"\n")
-# def main():
+def Display(datas):
+    t_nv,tv1,tv2,tv3 = 0,0,0,0
+    mess = ""
+    n = 0
+    for i in datas:
+        n += 1
+        n_v,v1,v2,v3 = i.count(0), i.count(1),i.count(2),i.count(3)
+        t_nv += n_v
+        tv1 += v1
+        tv2 += v2
+        tv3 += v3
+        total = n_v + v1 + v2 + v3
+        mess += (f"   {n:<6}|{n_v:^10}|  {n_v / total * 100:.2f} % |{v1:^10}|  {v1/ total * 100:.2f} % |"
+                 f"{v2:^10}|  {v2 / total * 100:.2f} % |{v3:^10}|  {v3 / total * 100:.2f} % |\n")
+    total = t_nv + tv1 + tv2 + tv3
+    t_nv,tv1,tv2,tv3 = t_nv / total * 100, tv1 / total * 100, tv2 / total * 100, tv3 / total * 100
+    head = f"District |  no Vote | ({t_nv:.2f}%) |  Vote 1  | ({tv1:.2f}%) |  Vote 2  | ({tv2:.2f}%) |  Vote 3  | ({tv3:.2f}%) |"
+    print()
+    print("=" * 39,"Summation of Vote","=" * 40)
+    print(head)
+    print("-" * len(head))
+    print(mess,end="")
+    print("=" * len(head))
+    input("Press any key to continue . . .")
+def main():
+    while True:
+        os.system("cls")
+        print("=================================")
+        print(f"{"Main Program":^33}")
+        print("=================================")
+        print(" 1. Input Number Vote ( 1000 - 5000 )\n 2. Start Random . . .\n 3. Display\n 4. Exit Program")
+        print("=================================")
+        choice = int(input("Select your choice : ( 1 - 4 ) : "))
+        match choice:
+            case 1:
+                num = InputNumber_ppl()
+            case 2:
+                try:
+                    datas = Random_Vote(num)
+                except UnboundLocalError:
+                    print("Please Input Number Vote")
+            case 3:
+                try:
+                    Display(datas)
+                except UnboundLocalError:
+                    print("Please Start Random")
+            case 4:
+                print("Exit Program")
+                exit()
+            case _:
+                print("No choice")
+        print()
+if __name__ == "__main__":
+    main()
 
-num = inputNumber_ppl()
-votes = Random_Vote(num)
-Display(votes)
 
 
 
