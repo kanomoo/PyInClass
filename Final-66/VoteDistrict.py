@@ -61,14 +61,14 @@ def main():
                 try:
                     datas = Random_Vote(num)
                 except UnboundLocalError:
-                    print("Please Input Number Vote")
+                    input("Please Input Number Vote . . .")
             case "3":
                 try:
                     Display(datas)
                 except UnboundLocalError:
-                    print("Please Start Random")
+                    input("Please Start Random . . .")
             case "4":
-                print("Exit Program")
+                print("Exit Program") 
                 exit()
             case _:
                 input("Please select your choice . . .")
