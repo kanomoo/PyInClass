@@ -2,8 +2,8 @@ def sum_matrices(matrix1: list[list[int]], matrix2: list[list[int]]) -> list[lis
     matrix = []
     for i in range(len(matrix1)):
         row = []
-        for n in range(len(matrix1[i])):
-            row.append(matrix1[i][n] + matrix2[i][n])
+        for j in range(len(matrix1[i])):
+            row.append(matrix1[i][j] + matrix2[i][j])
         matrix.append(row)
     return matrix
 
