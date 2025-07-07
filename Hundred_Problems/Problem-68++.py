@@ -9,15 +9,19 @@ def number_guessing_game() -> None:
             case "1":
                 n = 0
                 while True:
-                    n += 1
-                    num = int(input("Guess a number between 1 and 100: "))
-                    if num > score:
-                        print("Your guess is too high. Try again!")
-                    elif num < score:
-                        print("Your guess is too low. Try again!")
-                    else:
-                        print(f"Congratulations! You guessed the number correctly in {n} attempts.\n\nReturning to main menu..")
-                        break
+                    try:
+                        n += 1
+                        num = int(input("Guess a number between 1 and 100: "))
+                        print("Please input int")
+                        if num > score:
+                            print("Your guess is too high. Try again!")
+                        elif num < score:
+                            print("Your guess is too low. Try again!")
+                        else:
+                            print(f"Congratulations! You guessed the number correctly in {n} attempts.\n\nReturning to main menu..")
+                            break
+                    except ValueError: 
+                        print("Please input integer")
             case "2":
                 print("\nWelcome to the Number Guessing Game! "
                       "\n1. The system will randomly select a number between 1 and 100."
