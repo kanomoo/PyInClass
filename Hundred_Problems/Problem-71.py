@@ -9,7 +9,7 @@ class Person:
         name (str): The name of the person.
         age (int): The age of the person.
         """
-        self.name = name
+        self.name = name #self ตัวแทนชื่อตัวแปรด้านนอก
         self.age = age
 
     def get_name(self) -> str:
@@ -25,7 +25,7 @@ class Person:
         """
         Return the age of the person.
 
-        Returns:อ
+        Returns:
         int: the age of the person.
         """
         return self.age
