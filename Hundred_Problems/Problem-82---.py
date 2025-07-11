@@ -56,17 +56,27 @@ from itertools import permutations
 #     p = ["".join(i) for i in perm]
 #     return p
 
+
+
+# def find_permutations(s: str) -> list:
+#     if len(s) == 1:
+#         return [s]
+#
+#     permutations = []
+#
+#     for i in range(len(s)):
+#         char = s[i]
+#         remaining = s[:i] + s[i+1:]
+#         for i in find_permutations(remaining):
+#             permutations.append(char + i)
+#     return permutations
+
+from itertools import permutations
+
 def find_permutations(s: str) -> list:
-    if len(s) == 1:
-        return [s]
-
-    permutations = []
-
-    for i in range(len(s)):
-        char = s[i]
-        remaining = s[:i] + s[i+1:]
-        for i in find_permutations(remaining):
-            permutations.append(char + i)
-    return permutations
+    result = []
+    for i in permutations(s):
+        result.append("".join(i))
+    return result
 
 print(find_permutations("abc"))

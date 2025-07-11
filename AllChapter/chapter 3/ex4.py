@@ -4,3 +4,9 @@ price = num / 1.07
 vat = num - price
 print("Price Product :", price)
 print("Vat product :", vat)
+
+# product = float(input("ราคา : "))
+# vat = product * 7 // 100
+# buy = product - vat
+# print(buy)
+# print(vat)
