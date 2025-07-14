@@ -209,7 +209,7 @@ def e1():
 
     # n = int(input("Input :"))
     # print(f"{n % 500}")
-    # print(f"1000 : {n // 1000} 500 : {(n % 1000) // 500} 100 : {(n % 500) // 100}")
+    # print(f"1000 : {n // 1000} 500 : {(n % 1000) //  500} 100 : {(n % 500) // 100}")
     # print(f"{n % 500}")
 
     # num = int(input("Enter number money withdraw : "))
@@ -249,6 +249,4 @@ def e4():
     print(f"Vat product = {price * 7 / 100}")
     # print(f"Price product : {price - price * 7 / 100}")
 
-e3()
-e4()
-
+s()
