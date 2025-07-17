@@ -28,6 +28,7 @@ def remove_list(lst, value):
 l_word = ["zero","one","two","three","four","five"]
 a = remove_list(l_word,"one")
 print(*a,sep=", ")
+# *a คือการ "แตกค่าทุกตัวในลิสต์ a อvอกมา" แล้วส่งต่อเข้า print() ทีละตัว โดยไม่ต้องใช้ลูปเอง
 
 a = remove_list(l_word, " ") #.ใส่ try ไว้ไม่ว่ายังไงก็คืนค่า lst
 print(*a,sep=", ")
