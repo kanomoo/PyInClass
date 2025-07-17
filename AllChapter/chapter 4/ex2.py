@@ -1,6 +1,6 @@
 from random import uniform
-uniform1 = round(uniform(30,50),2)
-uniform2 = round(uniform(30,50),2)
+uniform1 = round(uniform(30,50),2) #ใช้ uniform เพื่อหาค่าสุ่มตัวเลขที่มีทศนิยม แล้วใช้ round เพื่อกำหนดทศนิยม 2 ตำแหน่ง
+uniform2 = round(uniform(30,50),2) #ต้องสร้างหลายตัวเพราะสุ่มหลายค่า
 uniform3 = round(uniform(30,50),2)
 uniform4 = round(uniform(30,50),2)
 uniform5 = round(uniform(30,50),2)
