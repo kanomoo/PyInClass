@@ -303,4 +303,4 @@ def e2():
     # print(f"Total value {total:.2f}")
     # print(f"Average value : {total / 5:.2f}")
 
-e2()
+s()
