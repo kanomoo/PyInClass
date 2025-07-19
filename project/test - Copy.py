@@ -16,3 +16,9 @@ elif c2 > c1:
     if c1 == 1 and c2 == 3: result = "Player 1 wins!"
 
 print(f"\nPlayer 1 chose: {r1}\nPlayer 2 chose: {r2}\n{result}")
+
+# for i in range(stop)
+# for i in range(start, stop)
+# for i in range(start,stop,step):
+#
+# for i in name
