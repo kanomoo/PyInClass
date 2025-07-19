@@ -1,4 +1,4 @@
-names, scores = [],[]
+names, scores, grades, points, = [],[],[],[]
 print("Input Data:")
 for i in range(5):
     name = input(f"Enter subject name({i+1}) : ")
@@ -6,7 +6,10 @@ for i in range(5):
     g = {80:("A",4),70:("B",3),60:"C",50:"D",0:"F"}
     for k,v in g.items():
         if score >= k:
-            grade,point = v
+            grade,point = g[k]
+            grades.append(grade)
+            points.append(point * 3)
+            break
     print()
     names.append(name)
     scores.append(score)
@@ -15,5 +18,5 @@ head = "No. Subject Name        Mark  Grade    Points"
 line = "=" * (len(head) + 3)
 print(line,head,line,sep="\n")
 for i in range(5):
-    print(f"")
+    print(f"{i} {names[i]} {scores[i]} {grades[i]} {points[i]}")
 
