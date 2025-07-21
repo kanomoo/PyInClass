@@ -98,10 +98,13 @@ day = {"จันทร์":"ทำงาน","อังคาร":"ทำงา
 r = random.choice([i for i in day])
 print(r,day[r])
 #31
-num1,num2,num3 = rd(0,100),rd(0,100),rd(0,100)
-m = 0
+num1,num2,num3,m = rd(0,100),rd(0,100),rd(0,100),0
 if num1 >= m: m = num1
 if num2 >= m: m = num2
 if num3 >= m: m = num3
 print(num1,num2,num3,m)
-
+#32 ###############################
+num = rd(0,2025)
+print(num)
+if (num % 4 == 0 and num % 100 != 0) or (num % 400 == 0): print(num,"true")
+else: print(num,"false")
