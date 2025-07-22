@@ -1,5 +1,5 @@
-print("Show Menu\n============")
-print("1. Menu\n2. Menu\n3. Menu\n4. Exit")
+print("Show Menu\n===========")
+print("1. Menu 1\n2. Menu 2\n3. Menu 3\n4. Exit")
 choice = input("Enter choice : ")
 match choice:
     case "1":
