@@ -108,3 +108,22 @@ num = rd(0,2025)
 print(num)
 if (num % 4 == 0 and num % 100 != 0) or (num % 400 == 0): print(num,"true")
 else: print(num,"false")
+#33
+import datetime
+# print(datetime.time(20,10).strftime("%H:%M"))
+
+# time = input("time : ")
+time = "02:01"
+time = int(time[:2])
+if time >= 6 and time <= 11: print("เช้า")
+elif time >= 12 and time <= 17: print("บ่าย")
+elif time >= 18 and time <= 23: print("เย็น/ค่ำ")
+else: print("ดึก")
+#34
+mess = ""
+for i in range(3):
+    num = int(input(f"point{i} : "))
+    if num >= 50: mess = "ผ่าน"
+    else:
+        mess = "ไม่ผ่าน"
+print(mess)
