@@ -1,6 +1,6 @@
 print(">> Program Find Maximum Value <<")
 num = int(input("Enter number of value(>= 1) : "))
-result,m = "",0 
+result,m = "", 0 
 if num >= 1:
     print(f"\nProgram get value {num} numbers.")
     for i in range(num):
@@ -12,4 +12,3 @@ if num >= 1:
     print(f"Maximum value number is {m}")
 else: print("Value input not correct.")
 print("Exit Program")
-
