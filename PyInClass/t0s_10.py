@@ -1,6 +1,3 @@
-from fontTools.misc.plistlib import end_integer
-
-
 def s():
     print("===5===")  ##################################################
     # การเปิดไฟล์ในภาษา Python
