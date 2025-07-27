@@ -120,10 +120,54 @@ elif time >= 12 and time <= 17: print("บ่าย")
 elif time >= 18 and time <= 23: print("เย็น/ค่ำ")
 else: print("ดึก")
 #34
+
 mess = ""
 for i in range(3):
-    num = int(input(f"point{i} : "))
+    num = rd(0,100)
+    print(f"point{i+1} : {num}")
     if num >= 50: mess = "ผ่าน"
     else:
         mess = "ไม่ผ่าน"
 print(mess)
+#35
+# num1 = int(input("num1 : "))
+# num2 = int(input("num2 : "))
+num1 = rd(1,12)
+num2 = rd(1,12)
+print(num1)
+print(num2)
+if num1 % num2 == 0:print("หารลงตัว")
+elif num2 % num1 == 0:print("หารลงตัว")
+#36
+num = rd(0,100)
+if num % 2 == 0 and num % 5 == 0: print("ผ่านทั้งคู่")
+#37
+num1 = rd(0,100)
+num2 = rd(0,100)
+num3 = rd(0,100)
+n3 = max(num1,num2,num3)
+n1 = min(num1,num2,num3)
+if num1 > n1 and num1 < n3: n2 = num1
+elif num2 > n1 and num2 < n3: n2 = num2
+elif num3 > n1 and num3 < n3: n2 = num3
+print(num1,num2,num3)
+print(n1,n2,n3)
+#38
+wight = 53
+height = 171
+bmi = wight / ((height/100) * (height/100))
+if bmi >= 30: print("น้ำหนักอยู่ในเกณฑ์อ้วนมาก")
+elif bmi >= 25: print("น้ำหนักอยู่ในเกณฑ์อ้วน")
+elif bmi >= 23: print("น้ำหสักเกินมาตรฐาน")
+elif bmi >= 18.5: print("น้ำหนักสมส่วน")
+else: print("น้ำหนักต่ำกว่าเกณฑ์")
+#39
+num = rd(1,100)
+if num >= 60: print("วัยสูงอายุ")
+elif num >= 20: print("วัยผู้ใหญ่")
+elif num >= 12: print("วัยรุ่น")
+elif num >= 6: print("เด็ก")
+print(num)
+#40
+name = "ของฟรี"
+if "ฟรี" in name: print("โฆษณา")
