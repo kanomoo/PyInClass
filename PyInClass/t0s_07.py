@@ -574,7 +574,7 @@ def ex4():
 
 
 
-def a5():
+def assignment5():
     import w7.Myfew as m
     while True:
         choice = input("Program Test Call Module\nMain Menu\n1. Find Max Number\n2. Check Palindrome\n3. Number to Text\n4. Decimal TO Binary\n5. Exit\nEnter Choice : ")
@@ -592,4 +592,4 @@ def a5():
                 break
             case _ :
                 print("No choice.")
-a5()
+assignment5()
