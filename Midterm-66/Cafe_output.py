@@ -128,6 +128,9 @@ while True:
           ,f"| {"4. Calculate Cost":22}|",line,sep="\n")
     select = int(input("Select Item : "))
     match select:
+        case 0:
+            print("Exit Program.")
+            break
         case 1:
             hot = int(input("Hot Coffee, how many glasses : "))
             result += f"\n{hot} {"Hot Coffee":15}35.00  {hot*35.00}"

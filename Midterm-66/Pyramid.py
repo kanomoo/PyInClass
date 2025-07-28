@@ -22,6 +22,7 @@
 
 #show in terminal
 # num = input("Enter string for pyramid : ")
+
 # num = "RukSomchai"
 # num = " ".join(num)
 # for i in range(0,len(num),2):
