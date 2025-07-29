@@ -6,7 +6,3 @@ for i in range(len(num) // 2):
     if start == end: result = "Palindrome"
     else: result = "Not Palindrome"
 print(result)
-
-# num = input()
-# if num[:] == num[::-1]: print("True")
-# else: print("False")
