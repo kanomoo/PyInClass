@@ -10,4 +10,3 @@ for i in range(len(num) // 2): # หารตัดเศษ 2 เพื่อ�
         print(f"Digit {num[i]} not equal to Digit {num[len(num)-1 - i]}")
         break
 print(f"Your enter number : {num} is {result} Number.\nExit Program")
-
