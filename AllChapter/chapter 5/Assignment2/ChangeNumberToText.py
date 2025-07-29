@@ -12,5 +12,6 @@ for i in num:
     elif i == "7": result += "Seven "
     elif i == "8": result += "Eight "
     elif i == "9": result += "Nine "
+    else: pass
 print(result,"Exit Program",sep="\n")
 
