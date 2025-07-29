@@ -1,7 +1,8 @@
+#นายปภาวิน ธิติชุณหกุล 6806021612037
 print(">> Program Change Number To Text")
 num,result = input("Enter integer number : "),"Text : "
 print(f"Number : {num}")
-for i in num:
+for i in num: #แสดงchar ใน num ทีละตัว
     if i == "0": result += "Zero "
     elif i == "1": result += "One "
     elif i == "2": result += "Two "
@@ -12,6 +13,5 @@ for i in num:
     elif i == "7": result += "Seven "
     elif i == "8": result += "Eight "
     elif i == "9": result += "Nine "
-    else: pass
 print(result,"Exit Program",sep="\n")
 

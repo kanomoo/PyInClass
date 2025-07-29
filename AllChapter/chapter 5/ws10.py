@@ -1,7 +1,7 @@
 Done = True
 Count = 0
 while Done:
-    Score = input("Ente rscore value #"+str(Count+1)+" : ")
+    Score = input("Enter score value #"+str(Count+1)+" : ")
     if Score != "-1":
         Mark = float(Score)
         if Mark >= 0 and Mark <= 100:
