@@ -6,8 +6,12 @@ while True:
         case "a" | "A":
             num = input("\nEnter long number :  ")
         case "b" | "B":
-            for i in num: total += int(i)
-            print(f"Your enter number : {num}\nSummation of digit : {total}\nSummation Odd of digit : {total}\nSummation even of digit : {total}")
+            odd, even = 0, 0 
+            for i in num: 
+                total += int(i)
+                if int(i) % 2 == 0: even += int(i)
+                else: odd += int(i)
+            print(f"Your enter number : {num}\nSummation of digit : {total}\nSummation Odd of digit : {odd}\nSummation even of digit : {even}")
         case "c" | "C":
             print(f"You enter number : {num}\nThis number has {max(num)} digits.")
         case "d" |"D":
