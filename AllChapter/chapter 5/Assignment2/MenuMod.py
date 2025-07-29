@@ -11,7 +11,7 @@ while True:
                 total += int(i)
                 if int(i) % 2 == 0: even += int(i)
                 else: odd += int(i)
-            print(f"Your enter number : {num}\nSummation of digit : {total}\nSummation Odd of digit : {odd}\nSummation even of digit : {even}")
+            print(f"Your enter number : {num}\nSummation of digit : {total}\nSummation Odd of digit : {odd}\nSummation Even of digit : {even}")
         case "c" | "C":
             print(f"You enter number : {num}\nThis number has {max(num)} digits.")
         case "d" | "D":
