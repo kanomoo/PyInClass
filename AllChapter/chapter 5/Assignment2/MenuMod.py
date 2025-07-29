@@ -14,7 +14,7 @@ while True:
             print(f"Your enter number : {num}\nSummation of digit : {total}\nSummation Odd of digit : {odd}\nSummation even of digit : {even}")
         case "c" | "C":
             print(f"You enter number : {num}\nThis number has {max(num)} digits.")
-        case "d" |"D":
+        case "d" | "D":
             print("\nExit Program...")
             break
     print()
