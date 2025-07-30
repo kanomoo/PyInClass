@@ -22,6 +22,12 @@
 # for i in range(len(num)):
 #     print(" " * i,num[::-1][i:],num[1:(len(num)-i)],sep="")
 
-num = input("Enter number : ")
-for i in range(len(num)): print(" " * i,num[::-1][i:],num[1:(len(num) - i)],sep="")
+# num = input("Enter number : ")
+# for i in range(len(num)): print(" " * i,num[::-1][i:],num[1:(len(num) - i)],sep="")
 
+# num = input("Enter number : ")
+num = "123456"
+re = ""
+for i in range(len(num)-1,-1,-1):
+    re += num[i]
+print(re + num)
