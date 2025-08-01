@@ -12,4 +12,4 @@ while True:
         case 2: print(f"{num:,.2f}(THB) => {num / 33:,.2f}(USD)")
         case 3: print(f"{num:,.2f}(THB) => {num / 0.2:,.2f}(JPY)")
         case 4: print(f"{num:,.2f}(THB) => {num / 37:,.2f}(EUR)")
-        case _: print("No choice pleace try again.")
+        case _: print("No choice pleace try again.")        
