@@ -15,9 +15,26 @@
 # print("x =",x) # 0.345  #log ธรรมดาเป็นฐาน e natural logarithm  ต้องใช้ log ฐาน 10
 # print("value of [ log(x^2/(1-x)) ] / [ x^(5+x) ] is",math.log10(pow(x,2) / (1-x)) / (pow(x,5+x)))
 
-import math as m
-x = int(input())
-print(pow(m.sin(x),2) * pow(m.cos(x),2))
-x = m.radians(x)
-print(m.exp(1/2 * m.sqrt(m.tan(m.cos(x)))))
-print(m.log10(pow(x,2)/(1-x)) / pow(x,5) + x)
+# import math as m
+# x = float(input("ETner angle : "))
+# x = m.radians(x)
+# print(pow(m.sin(x),2) * pow(m.cos(x),2))
+# print(m.exp(1/2 * m.sqrt(m.tan(m.cos(x)))))
+# print(m.log10(pow(x,2)/(1-x)) / pow(x,5+x))
+
+# import math as m
+# x = float(input("Enter angle : "))
+# rad = m.radians(x)
+# eq1 = pow(m.sin(rad),2) * pow(m.cos(rad),2)
+# print("Eq1 = ", eq1)
+
+# import math as m 
+# x = float(input("Enter angle : "))
+# rad = m.radians(x)
+# eq2 = m.exp(0.5 * m.sqrt(m.tan(m.cos(rad))))
+# print("Eq2 = ", eq2)
+
+from math import log10
+x = float(input("Enter float number : "))
+eq3 = log10(pow(x,2) / (1-x) / pow(x,5+x))
+print("Eq3 : ", eq3)

@@ -9,11 +9,22 @@
 # print("Total value :",total)
 # print("Average value :",round((total / 5),2))
 
-from random import uniform 
-total = 0
-print("Value random : ",end="")
-for _ in range(5):
-    rd = round(uniform(30,50),2)
-    total += rd
-    print(f"{rd} , " if _ < 4 else f"{rd}",end="")
-print(f"\nTotal value : {round(total,2)}\nAverage value : {round(total / 5,2)}")
+from random import uniform
+total,strinput = 0.0,""
+for n in range(1,6):
+    num = round(uniform(30,50),2)
+    total += num 
+    strinput += str(num) + " , "
+    
+print("Value random :", strinput)
+print("Total value :",round(total,2))
+print("Average :", round(total/n,2))
+
+# from random import uniform 
+# total = 0
+# print("Value random : ",end="")
+# for _ in range(5):
+#     rd = round(uniform(30,50),2)
+#     total += rd
+#     print(f"{rd} , " if _ < 4 else f"{rd}",end="")
+# print(f"\nTotal value : {round(total,2)}\nAverage value : {round(total / 5,2)}")
