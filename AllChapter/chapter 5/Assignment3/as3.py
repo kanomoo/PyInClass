@@ -35,10 +35,12 @@ while True:
                 PRICE = SHOW * PRICE
                 total += PRICE
                 ts += SHOW
-                print(f"| {NET:>12,.2f} - {INCOME:>12,.2f} |   {TR:>2}%  |{TAX:21} |{PRICE:13,.2f} |")
+                if NET != 0: print(f"| {NET:>12,.2f} - {INCOME:>12,.2f} |   {TR:>2}%  |{TAX:21} |{PRICE:13,.2f} |")
+                else: print(f"| {"":>12} > {INCOME:>12,.2f} |   {TR:>2}%  |{TAX:21} |{PRICE:13,.2f} |")
                 if ts == net_income: break
 
             print(line2)
             print(f"|{"Total":^61}|{total:13,.2f} |")
             print(line2)
+        case _: print("No choice...")
     print()
