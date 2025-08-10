@@ -2,7 +2,7 @@
 from random import randint
 while True:
     print("\nMain Menu\n==========\n 1. Play Game\n 2. Exit\n")
-    choice,rd = int(input("Enter Choice : ")),randint(1,99)
+    choice,rd = int(input("Enter Choice : ")),randint(1,99) #ต้อง random นอก match
     match choice:
         case 1:
             print("\nNow Play game")

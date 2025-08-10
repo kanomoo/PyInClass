@@ -14,7 +14,7 @@ for i in range(6):
     tp += points
     result += f":   {i+1}   : {name:<{len("Subject Name               ")}}: {score:4.1f} :   {grade}   :   {3}   : {points:4.1f} :\n"
 head = ":Sub No.: Subject Name               : Mark : Grade :Credits:Points:"
-line = "=" * len(head)
+line = "=" * len(head) #ใช้ len กับตัวแปร string เพื่อลดเวลาจัด
 top = f"{"Grade Report":>{len(":Sub No.: Subject Name  "+"Grade Report")}}"
 result += line
 print(top,line,head,line,result,sep="\n")

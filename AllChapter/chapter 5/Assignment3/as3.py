@@ -28,7 +28,7 @@ while True:
                 elif i == 6: NET, INCOME, TR, PRICE = 2000001, 5000000, 30, 0.30
                 elif i == 7: NET, INCOME, TR, PRICE =       0, 5000000, 35, 0.35
 
-                if NET_INCOME >= INCOME - NET + 1:
+                if NET_INCOME >= INCOME - NET + 1: # ตัวแปรใหญ่คือด้านใน for
                     SHOW = INCOME - NET + 1
                     NET_INCOME -= INCOME - NET + 1
                 else: SHOW = NET_INCOME
