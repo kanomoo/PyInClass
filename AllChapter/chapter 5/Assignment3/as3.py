@@ -1,3 +1,4 @@
+#นายปภาวิน ธิติชุณหกุล 6806021612037
 head, salary, discount, result = "| Tax Main Menu |", 0, 100000, ""
 line = "=" * len(head)
 while True:
@@ -39,8 +40,6 @@ while True:
                 else: print(f"| {"":>12} > {INCOME:>12,.2f} |   {TR:>2}%  |{TAX:21} |{PRICE:13,.2f} |")
                 if ts == net_income: break
 
-            print(line2)
-            print(f"|{"Total":^61}|{total:13,.2f} |")
-            print(line2)
+            print(line2,f"|{"Total":^61}|{total:13,.2f} |",line2,sep="\n")
         case _: print("No choice...")
     print()

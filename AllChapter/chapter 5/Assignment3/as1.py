@@ -1,10 +1,11 @@
+#นายปภาวิน ธิติชุณหกุล 6806021612037
 from random import randint
 while True:
     print("\nMain Menu\n==========\n 1. Play Game\n 2. Exit\n")
     choice,rd = int(input("Enter Choice : ")),randint(1,99)
-    print("Now Play game")
     match choice:
         case 1:
+            print("\nNow Play game")
             for i in range(6):
                 num = int(input(f"Enter guess number(#{i+1}) : "))
                 if num > rd: print("Your value is more than")

@@ -1,3 +1,4 @@
+#นายปภาวิน ธิติชุณหกุล 6806021612037
 result,tc,tp = "",0,0
 print(">> Program Calculate Grade <<","=" * 29,"\nInput Data:",sep="\n")
 for i in range(6):
