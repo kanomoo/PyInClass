@@ -13,7 +13,7 @@ while True:
         case 2:
             income  = salary * 12
             net_income = income - discount
-            print(f"Salary :  {salary:,.2f}\nIncome :  {income:,.2f}\nDiscount :  {discount:,.2f}\nNet income :  {net_income:,.2f}\n\nReport Tax:")
+            print(f"\nSalary :  {salary:,.2f}\nIncome :  {income:,.2f}\nDiscount :  {discount:,.2f}\nNet income :  {net_income:,.2f}\n\nReport Tax:")
             line2 = "=" * 78
             head2 = f"|         Net     Income      |Tax Rate|{"Tax":^37}|"
             print(line2,head2,line2,sep="\n")
@@ -32,7 +32,7 @@ while True:
                     SHOW = INCOME - NET + 1
                     NET_INCOME -= INCOME - NET + 1
                 else: SHOW = NET_INCOME
-                TAX = f" {SHOW:,.2f} * {TR:.2f}"
+                TAX = f" {SHOW:,.2f} * {PRICE:.2f}"
                 PRICE = SHOW * PRICE
                 total += PRICE
                 ts += SHOW
