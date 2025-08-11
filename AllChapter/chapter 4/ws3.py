@@ -6,6 +6,6 @@ print()
 
 num = ord(ch)
 print("Decimal value : ", num)
-print("Vinary value : ", bin(num))
+print("Binary value : ", bin(num))
 print("Octal value : ", oct(num))
 print("Hexa value : ", hex(num))
