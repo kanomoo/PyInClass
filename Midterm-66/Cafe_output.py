@@ -148,4 +148,3 @@ while True:
             print(result)
             n += 1
             result,total = f"\nOrder #{n}:\n{line2}\nQty Item\t\tPrice   Total\n{line2}",0
-

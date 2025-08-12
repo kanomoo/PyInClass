@@ -29,8 +29,9 @@
 # m = {1:31,2:28,3:31,4:30,5:31,6:30,7:31,8:31,9:30,10:31,11:30,12:31}
 # print(m[months]) if months in m.keys()else print("ไม่มีเดือน")
 
-# p = input()
-# print("Palindrome") if p == p[::-1] else print("Not Palindrome")
+
+
+
 
 # p = 123521
 # for i in range(len(str(p))//2):
