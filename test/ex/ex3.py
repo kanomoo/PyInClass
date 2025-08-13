@@ -23,7 +23,7 @@ while True:
                 elif i == 5 : net, income, tr, tax, price = 1000001, 2000000, 25, "", 0
                 elif i == 6 : net, income, tr, tax, price = 2000001, 5000000, 30, "", 0
                 elif i == 7 : net, income, tr, tax, price =       0, 5000001, 35, "", 0
-                if net_income > (income - net):show = (income - net+1)
+                if net_income > (income - net) : show = (income - net+1)
                 else: show =  net_income
                 tax = f" {show:,.2f} * {tr / 100:.2f}"
                 price = show * tr / 100
