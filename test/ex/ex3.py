@@ -25,12 +25,13 @@ while True:
                 elif i == 7 : net, income, tr, tax, price =       0, 5000001, 35, "", 0
                 if net_income > (income - net) : show = (income - net+1)
                 else: show =  net_income
+                if i == 7: show = net_income
                 tax = f" {show:,.2f} * {tr / 100:.2f}"
                 price = show * tr / 100
                 net_income -= show
                 tp += price
-                if net != 0: print(f"|{net:>{len("          Net ")},.2f} -{income:>{len("ncome        ")},.2f} |   {tr:2}%  |{tax:<{len("                Tax   ")}}|{price:>{len("               ")},.2f}|")
-                else: print(f"|{"":>{len("          Net ")}} >{income:>{len("ncome        ")},.2f} |   {tr:2}%  |{tax:<{len("                Tax   ")}}|{price:>{len("               ")},.2f}|")
+                if net != 0: print(f"|{net:>{len("          Net ")},.2f} -{income:>{len("ncome        ")},.2f} |   {tr:2}%  |{tax:<{len("                Tax   ")}}|{price:>{len("              ")},.2f} |")
+                else: print(f"|{"":>{len("          Net ")}} >{income:>{len("ncome        ")},.2f} |   {tr:2}%  |{tax:<{len("                Tax   ")}}|{price:>{len("              ")},.2f} |")
                 if net_income == 0: break
-            print(l,f"|{"Total Tax":^{len("         Net     Income      |Tax Rate|                  Tax  ")}}|{tp:>{len("               ")},.2f}|",l,sep="\n")
+            print(l,f"|{"Total Tax":^{len("         Net     Income      |Tax Rate|                  Tax  ")}}|{tp:>{len("              ")},.2f} |",l,sep="\n")
     print()
