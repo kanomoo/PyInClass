@@ -1,12 +1,45 @@
-while True:
-    name = input("Enter text(enter-exit) : ")
-    if name == "exit": break
-    elif name.isalpha(): print("Text is alphabetic")
-    elif name.isdigit(): print("Text is digit")
-    elif name.isalnum(): print("Text is alpha and numeric")
-    elif name.isspace(): print("")
-    elif name == "": print("")
-    elif type(name) == str: print("Text is string")
+from random import randint
+for i in range(50):
+    print(randint(0,100))
+
+# nums = [x for x in range(5) if x % 2 == 0]
+# print(nums)
+
+# num, result = int(input("Enter number : ")), ""
+# while num >= 1:
+#     num2 = num % 2
+#     result += str(num2)
+#     num = num // 2
+# print(result[::-1])
+#
+# num,result = int(input("Enter number : ")), 0
+# n = 0
+# for i in str(num)[::-1]:
+#     result += int(i) * (2 ** n)
+#     n += 1
+# print(result)
+
+
+
+
+# num,result,result2 = int(input("Enter number : ")), "", ""
+# while num >= 1:
+#     num2 = num % 2
+#     result += str(num2)
+#     num = num // 2
+#
+# print(result[::-1])
+# print(result2)
+
+# while True:
+#     name = input("Enter text(enter-exit) : ")
+#     if name == "exit": break
+#     elif name.isalpha(): print("Text is alphabetic")
+#     elif name.isdigit(): print("Text is digit")
+#     elif name.isalnum(): print("Text is alpha and numeric")
+#     elif name.isspace(): print("")
+#     elif name == "": print("")
+#     elif type(name) == str: print("Text is string")
 
 
 # from random import randint
