@@ -1,6 +1,42 @@
-from random import randint
-for i in range(50):
-    print(randint(0,100))
+print(chr(67))
+
+print(ord("A")+ord("B"))
+
+# for i in range(5):
+#     print(i)
+#     if i == 4: break
+#
+# for i in range(5):
+#     if i == 3: break
+#     print(i)
+
+# for i in "nama":
+#     if i < "e": print(":",end="")
+#     else: print(i,end="")
+
+# for i in range(1,5):
+#     for n in range(1,i+1):
+#         print("=",end="")
+#     print()
+
+# for i in range(4):
+#     for n in range(1,5):
+#         print("=",end="")
+#     print()
+
+# for i in range(1, 4 + 1):
+#     for j in range(1,i+1) :
+#         print("=", end="")
+#     print()
+
+# for i in range(4):
+#     for n in range(5,1,-1):
+#         print("=",end="")
+#     print()
+
+# from random import randint
+# for i in range(50):
+#     print(randint(0,100))
 
 # nums = [x for x in range(5) if x % 2 == 0]
 # print(nums)
@@ -196,7 +232,6 @@ for i in range(50):
 #         print("Exit Program")
 #         break
 #     print(f"Maximum Digit of integer number {num} = {max(str(num))}")
-
 
 
 # num = int(input("Enter number money withdraw : "))
