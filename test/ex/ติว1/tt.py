@@ -19,8 +19,21 @@
 # print(hex(131))
 
 # print(chr(67))
+# for i in range(5):
+#     print(" " * 5," " * (5-i),"*" * i,"*","*" * i,sep="")
+# for i in range(5):
+#     print(" " * i,"*" * ((5*2) - i),"*" * ((5*2) - i),sep="")
+# for i in range(5):
+#     print(" " * ((5-1)-i),"*" * ((5)-i),"  " * (i+1),"  " * (i),"*" * ((5)-i),sep="")
+
+# print(chr(67))
 
 # print(ord("A")+ord("E"))
+# print(ord("A")+ord("B"))
+
+# for i in range(5):
+#     for i in range(3):
+#         print(i)
 
 # for i in range(5):
 #     print(i)
