@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # a, b, c, d = True, False, True, False
 # print( a and b or c or d)
 #
@@ -38,7 +37,6 @@
 # print(name[1])
 # print(name[-3])
 
-=======
 # num = 10
 # ac = 2
 # if num > 20:
@@ -60,7 +58,7 @@
 # print(hex(131))
 
 # print(chr(67))
->>>>>>> origin/main
+
 # for i in range(5):
 #     print(" " * 5," " * (5-i),"*" * i,"*","*" * i,sep="")
 # for i in range(5):
