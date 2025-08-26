@@ -1,3 +1,66 @@
+<<<<<<< HEAD
+# a, b, c, d = True, False, True, False
+# print( a and b or c or d)
+#
+# print( a and b and c or d)
+
+# x = 20
+# y = 5
+# c = 2
+# print(y / c % x //c )
+# # 0 , 1 ,  0.0 ,  1.0
+
+# x = 50
+# y = 20
+# print(y + x - x + y + y + y)
+
+# x = 10
+# y = 2
+# print(x ** y // y /y % y)
+
+# x = 22
+# y = 21
+# c = 20
+# print("True" if x > y > c else "False")
+
+
+# t = 0
+# for i in range(12):
+#     if i %2 == 0:
+#         t += i
+#     else:
+#         t += 1
+#     if i == 8: break
+# print(t)
+
+# name = "Python"
+
+# print(name[1])
+# print(name[-3])
+
+=======
+# num = 10
+# ac = 2
+# if num > 20:
+#     ac = num
+#     num = ac
+# elif ac > 2.5:
+#     ac += 20
+#     num += 50
+# elif num < 11:
+#     temp = num
+#     ac = num
+#     num = temp
+# print(num,ac)
+
+# print(bin(10))
+
+# print(oct(55))
+
+# print(hex(131))
+
+# print(chr(67))
+>>>>>>> origin/main
 # for i in range(5):
 #     print(" " * 5," " * (5-i),"*" * i,"*","*" * i,sep="")
 # for i in range(5):
@@ -7,6 +70,7 @@
 
 # print(chr(67))
 
+# print(ord("A")+ord("E"))
 # print(ord("A")+ord("B"))
 
 # for i in range(5):
@@ -16,7 +80,7 @@
 # for i in range(5):
 #     print(i)
 #     if i == 4: break
-#
+
 # for i in range(5):
 #     if i == 3: break
 #     print(i)
