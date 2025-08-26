@@ -1,11 +1,44 @@
-print(chr(67))
+# num = 10
+# ac = 2
+# if num > 20:
+#     ac = num
+#     num = ac
+# elif ac > 2.5:
+#     ac += 20
+#     num += 50
+# elif num < 11:
+#     temp = num
+#     ac = num
+#     num = temp
+# print(num,ac)
 
-print(ord("A")+ord("B"))
+# print(bin(10))
+
+# print(oct(55))
+
+# print(hex(131))
+
+# print(chr(67))
+# for i in range(5):
+#     print(" " * 5," " * (5-i),"*" * i,"*","*" * i,sep="")
+# for i in range(5):
+#     print(" " * i,"*" * ((5*2) - i),"*" * ((5*2) - i),sep="")
+# for i in range(5):
+#     print(" " * ((5-1)-i),"*" * ((5)-i),"  " * (i+1),"  " * (i),"*" * ((5)-i),sep="")
+
+# print(chr(67))
+
+# print(ord("A")+ord("E"))
+# print(ord("A")+ord("B"))
+
+# for i in range(5):
+#     for i in range(3):
+#         print(i)
 
 # for i in range(5):
 #     print(i)
 #     if i == 4: break
-#
+
 # for i in range(5):
 #     if i == 3: break
 #     print(i)
