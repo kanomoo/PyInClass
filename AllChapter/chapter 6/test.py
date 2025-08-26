@@ -33,6 +33,9 @@
 # print(f"name slicing -1:-4 = {name[-1:-4]}")
 # print(f"name slicing -5:-1 = {name[-5:-1]}")
 # print(f"name sliing : = {name[:]}")
+# num = "680602161118"
+# print(num[-5:])
+
 
 # name = "Somchai"
 # print(f"name slicing 0: :2 = {name[0: :2]}")
