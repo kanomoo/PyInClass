@@ -1,3 +1,5 @@
+# print(len("python\t\tsdfdasjk;\n)"))
+
 # s1 = "Python"
 # s2 = "Hello World"
 # salary = 15890.00
