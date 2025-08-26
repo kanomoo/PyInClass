@@ -1,11 +1,31 @@
-print(chr(67))
+# num = 10
+# ac = 2
+# if num > 20:
+#     ac = num
+#     num = ac
+# elif ac > 2.5:
+#     ac += 20
+#     num += 50
+# elif num < 11:
+#     temp = num
+#     ac = num
+#     num = temp
+# print(num,ac)
 
-print(ord("A")+ord("B"))
+# print(bin(10))
+
+# print(oct(55))
+
+# print(hex(131))
+
+# print(chr(67))
+
+# print(ord("A")+ord("E"))
 
 # for i in range(5):
 #     print(i)
 #     if i == 4: break
-#
+
 # for i in range(5):
 #     if i == 3: break
 #     print(i)
