@@ -21,6 +21,7 @@ while True:
                 elif score >= 50: d += 1
                 elif score >=  0: f += 1
             print(f"|  A  |  {a:3} |\n|  B  |  {b:3} |\n|  C  |  {c:3} |\n|  D  |  {d:3} |\n|  F  |  {f:3} |",l,f"|Total|  {num:3} |",l,sep="\n")
+
         case 3:
             print("Exit Program")
             break
