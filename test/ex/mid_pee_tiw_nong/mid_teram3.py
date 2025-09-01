@@ -35,5 +35,3 @@ head = "|  No |          Course           |  Credit | Score | Grade |"
 line = len(head) * "="
 l = len(head) * "-"
 print(line,head,l,result+l,f"Total Credits: {tc}\nGPA : {tp / tc:.2f}",line,sep="\n")
-
-
