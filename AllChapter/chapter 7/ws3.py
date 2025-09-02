@@ -9,3 +9,13 @@ print("Program display triangle.")
 num = int(input("Enter number line : "))
 ch = input("Enter character : ")
 display_triangle(num,ch)
+
+
+# def dis_t(num,name):
+#     for i in range(1,num+1):
+#         print(name * i)
+
+# print("PRogram display triangel.")
+# num = int(input("Enter number line : "))
+# name = input("Enter character : ")
+# dis_t(num,name)

@@ -3,6 +3,7 @@ def sum_number(End):
     for n in range(1, End+1):
         sum += n
     print(f"sum of 1 .. {End} = {sum}")
+    print(num)
 
 print("Program sum 1 to n used function.")
 num = int(input("Enter number : "))

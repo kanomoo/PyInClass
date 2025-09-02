@@ -66,8 +66,8 @@
 # print("|%7.3f|" % gpa)
 # print("|%07.3f|" % gpa)
 
-# s = "Python"
-# print(s.count("Py"))
-# print(s.find("on"))
-# print(s.index("th"))
-# print(s.replace("thon","Game"))
+s = "Python"
+print(s.count("Py"))
+print(s.find("on"))
+print(s.index("th"))
+print(s.replace("thon","Game"))
