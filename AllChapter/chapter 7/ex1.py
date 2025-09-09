@@ -6,7 +6,6 @@ def find_max(num):
 
 print(find_max(6378942))
 
-# def find_max(num):
-#     return(max(str(num)))
+# def find_max(num):return(max(str(num)))
 #
 # print(find_max(6378942))

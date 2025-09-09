@@ -1,74 +1,72 @@
-# def check_rate(total):
-#     if total > 20000: return(0.10)
-#     elif total > 10000: return(0.075)
-#     elif total > 5000: return(0.05)
-#     elif total > 1000: return(0.025)
-#     else: return(0.0)
+# def read_scores():
+#     scores = ()
+#     count = 1
+#     while True:
+#         score = int(input(f"Enter score#{count} (-1 to exit): "))
+#         if score >= 0 and score <= 100:
+#             scores += (score,)
+#             count += 1
+#         elif score == -1:
+#             break
+#     count -=1
+#     return(scores)
 
-# def get_sale():
-#     global sales
-#     for n in range(1,8):
-#         sale = float(input(f"Enter sale day {n} : "))
-#         sales += (sale,)
+# def check_grades(scores):
+#     grades = ()
+#     for score in scores:
+#         grade = ""
+#         if score >= 80: grade = "A"
+#         elif score >= 70: grade = "B"
+#         elif score >= 60: grade = "C"
+#         elif score >= 50: grade = "D"
+#         else: grade = "F"
+#         grades += (grade,)
+#     return(grades)
+
+# def report_grades(scores, grades):
+#     result = ("="*24)+"\n| No. | Scores | Grade |\n"+("="*24)+"\n"
+#     for n in range(len(scores)):
+#         result += f"| %2d  |   %3d  |   %s   |\n" % (n,scores[n],grades[n])
+#     result += ("="*24)
+#     print(result)
+
+# scores = read_scores()
+# grades = check_grades(scores)
+# report_grades(scores,grades)
+
+def input_score():
+    n, scores = 0, () 
+    while True:
+        n += 1
+        score = int(input(f"Enter score #{n} ( -1 to exit) : "))
+        if score >= 0 and score <= 100:
+            scores += (score,)
+        elif score == -1: break
+    return(scores)
+
+def check_grade(score):
+    grades = ()
+    for i in score:
+        if i >= 80 : grade = "A"
+        elif i >= 70 : grade = "B"
+        elif i >= 60: grade = "C"
+        elif i >= 50: grade = "D"
+        else: grade = "F"
+        grades += (grade,)
+    return(grades)
+
+def report(score,grade):
+    result = ""
+    head = "| No. | Scores | Grade |"
+    line = "=" * len(head)
+    result += f"{line}\n{head}\n{line}\n"
+    for i in range(len(grade)):
+        result += f"|  {i}   |   {score[i]:3} |   {grade[i]}   |\n"
+    print(result+line,"\nEnd Program.")
     
-# def sum_sale():
-#     total = 0
-#     for n in range(len(sales)):
-#         total += sales[n]
-#     return total
-
-# def report():
-#     print(f"\nTotal sale : {total_sale:.2f}")
-#     print(f"Commision rate : {rate*100:.2f}%")
-#     print(f"Total Commision : {commision:.2f}")
-
-# sales = ()
-# get_sale()
-# total_sale = sum_sale()
-# rate = check_rate(total_sale)
-# commision = total_sale * rate
-# report()
+ 
+scores = input_score()
+grades = (check_grade(scores))
+report(scores,grades)
 
 
-
-# def Input():
-#     global sales
-#     for i in range(7):
-#         sale = int(input(f"Enter sale day {i+1} : "))
-#         sales += (sale,)
-#     return sum(sales)
-
-# def Commission_rate(total):
-#     com = {20000:10,10000:7.5,5000:5,1000:2.5,0:0}
-#     for i in com: 
-#         if total > i: return com[i]
-
-# def Report():
-#     print(f"\nTotal sale : {total:.2f}\nCommision rate : {rate:.2f}%\nTotal commision : {total * rate/100:.2f}")
-
-# sales = ()
-# total = Input()
-# rate = Commission_rate(total)
-# Report()
-
-
-
-
-# def Commission_rate(total):
-#     com = {20000:10,10000:7.5,5000:5,1000:2.5,0:0}
-#     for i in com: 
-#         if total > i: return com[i]
-
-# def Input():
-#     total = 0
-#     for i in range(7):
-#         sale = int(input(f"Enter ale day {i+1} : "))
-#         total += sale
-#     return total
-
-# def Report():
-#     print(f"\nTotal sale : {total:.2f}\nCommision rate : {rate:.2f}%\nTotal commision : {total * rate/100:.2f}")
-
-# total = Input()
-# rate = Commission_rate(total)
-# Report()
