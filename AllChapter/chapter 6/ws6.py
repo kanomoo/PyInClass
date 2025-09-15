@@ -1,5 +1,4 @@
 s = input("Enter string : ")
-print("\nEnter string : ")
 print(f"Lowever String = {s.lower()}")
 print(f"Upper String = {s.upper()}")
 print(f"Capitalize String = {s.capitalize()}")
