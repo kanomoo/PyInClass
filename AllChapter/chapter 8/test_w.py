@@ -52,9 +52,19 @@ def s_grade(scores):
                 break
     return grades
 
-def report():
+def report(scores,grades):
+    print(scores)
+    print(grades)
+    result = ""
     head = "| No. | Scores | Grade |"
-    line = 
+    line = "=" * len(head)
+    result += f"{line}\n{head}\n{line}"
+    for i in range(len(scores)):
+        result += f"|  {i}  |   {scores[i]:3}  |   {grades[i]}   |"
+    result += f"{line}\nEnd Program."
+    return result
+
 
 scores = input_score()
 grades = s_grade(scores)
+print(report(scores,grades))
