@@ -50,6 +50,7 @@ def report(datas):
             p += f"{i:>11} :"
         print(p,line,sep="\n")
 
+
 input_sales()
 datas = data_sales()
 report(datas)
