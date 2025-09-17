@@ -25,7 +25,44 @@
 # print(result)
 # print("End Program.")
 
-g = {"A":4}
-print(g["A"])
-f = "A"
-print(g[f])
+
+
+
+
+
+
+# def input_grade():
+#     grades, grade = [], ""
+#     while True:
+#         grade = input("Enter grade (Q-exit): ").upper()
+#         if grade != "Q": grades.append(grade)
+#         else: return grades
+
+# def check_point():
+#     grade = input_grade()
+
+#     points = []
+#     g = ["A","B","C","D","F"]
+#     point = [4,3,2,1,0]
+#     for i in grade:
+#         for n in range(len(g)):
+#             if i == g[n]: 
+#                 points.append(point[n])
+#                 break
+#     return points, grade 
+
+# def report():
+#     point, grade = check_point()
+
+#     result = ""
+#     total = 0
+#     head = "|No.|Grade|Point|Total|"
+#     line = "=" * len(head)
+#     result += f"{line}\n{head}\n{line}\n"
+#     for i in range(len(grade)):
+#         result += f"| {i+1} |  {grade[i]}  | {point[i]:3.1f} |{(point[i]) * 3:5.2f}|\n"
+#         total += (point[i]) * 3
+#     result += f"{line}\nGrade Point Average(GPA) : {total / ((i+1) * 3):.2f}"
+#     print(result) 
+
+# report()

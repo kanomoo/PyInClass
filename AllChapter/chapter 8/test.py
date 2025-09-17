@@ -109,7 +109,10 @@
 
 
 
-A = [[1,2,3],[4,5,6]]
-for i in range(len(A)):
-    for c in range(len(A[0])):
-        print(A[i][c])
+# A = [[1,2,3],[4,5,6]]
+# for i in range(len(A)):
+#     for c in range(len(A[0])):
+#         print(A[i][c])
+
+
+print(__name__)
