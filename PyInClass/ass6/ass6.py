@@ -30,7 +30,7 @@ def report(data):
     result += f"{"Report of Sales":^{len(head)}}\n{line}\n{head}\n{line}\n"
     for i in range(len(data)):
         if i != len(data) - 1: result += f": {i+1:2} :"
-        else: result += f"Total:"
+        else: result += f"{line}\nTotal:"
         for n in range(len(data[0])):
             result += f"{data[i][n]:11,.2f} :"
         result += "\n"
